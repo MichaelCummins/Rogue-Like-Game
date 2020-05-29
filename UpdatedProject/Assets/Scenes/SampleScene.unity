@@ -701,13 +701,13 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: -8939171650008973888, guid: cbfd3018f751bb94296fdf621a536676,
+  m_Sprite: {fileID: 5511310427160798730, guid: d72f38e696d51754d96163702ce9435f,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1.2, y: 1.2}
+  m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -722,7 +722,7 @@ Transform:
   m_GameObject: {fileID: 706604043}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -3.49, y: -1.53, z: 0}
-  m_LocalScale: {x: 1, y: 1.0125, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2
@@ -745,7 +745,7 @@ BoxCollider2D:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
     oldSize: {x: 1, y: 1}
-    newSize: {x: 1.2, y: 1.2}
+    newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -791,18 +791,17 @@ MonoBehaviour:
   range: 10
   resource: 20
   spriteRenderer: {fileID: 0}
-  spLeft: {fileID: -2568319742253383823, guid: cbfd3018f751bb94296fdf621a536676, type: 3}
-  spRight: {fileID: -8939171650008973888, guid: cbfd3018f751bb94296fdf621a536676,
+  spLeft: {fileID: -3961784124136958484, guid: d72f38e696d51754d96163702ce9435f, type: 3}
+  spRight: {fileID: 5511310427160798730, guid: d72f38e696d51754d96163702ce9435f, type: 3}
+  spUp: {fileID: 8486736429970962355, guid: d72f38e696d51754d96163702ce9435f, type: 3}
+  spDown: {fileID: -2122910102985897859, guid: d72f38e696d51754d96163702ce9435f, type: 3}
+  spTopLeft: {fileID: -6767471108740967954, guid: d72f38e696d51754d96163702ce9435f,
     type: 3}
-  spUp: {fileID: -2709294358123329957, guid: cbfd3018f751bb94296fdf621a536676, type: 3}
-  spDown: {fileID: 4450859381066863295, guid: cbfd3018f751bb94296fdf621a536676, type: 3}
-  spTopLeft: {fileID: -8612395526732179069, guid: 9b3015bf01d5f8a46a65c03e52bc141c,
+  spTopRight: {fileID: -4553152836170302121, guid: d72f38e696d51754d96163702ce9435f,
     type: 3}
-  spTopRight: {fileID: -1401569307091579110, guid: 9b3015bf01d5f8a46a65c03e52bc141c,
+  spBotLeft: {fileID: -4162575854315964758, guid: d72f38e696d51754d96163702ce9435f,
     type: 3}
-  spBotLeft: {fileID: 2089442787513600638, guid: 9b3015bf01d5f8a46a65c03e52bc141c,
-    type: 3}
-  spBotRight: {fileID: -3106412021967839765, guid: 9b3015bf01d5f8a46a65c03e52bc141c,
+  spBotRight: {fileID: 8637998565425633004, guid: d72f38e696d51754d96163702ce9435f,
     type: 3}
 --- !u!114 &706604049
 MonoBehaviour:
@@ -1195,7 +1194,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -25, y: -457}
+  m_AnchoredPosition: {x: -25, y: -442}
   m_SizeDelta: {x: 500, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1363802140
