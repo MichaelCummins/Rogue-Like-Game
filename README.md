@@ -18,7 +18,7 @@ Currently, I am working on it daily and it is the main focus of my attention
 
 Currently I am working on improving the art assests of the game, primarily the player character models, and then the enemy models.
 
-Here is a link to my [Trello Board] (https://trello.com/b/m53Dn8Vz/rogue-like)
+Here is a link to my [Trello Board](https://trello.com/b/m53Dn8Vz/rogue-like)
 
 ## Why make this???
 
