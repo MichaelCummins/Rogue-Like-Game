@@ -18,6 +18,8 @@ Currently, I am working on it daily and it is the main focus of my attention
 
 Currently I am working on improving the art assests of the game, primarily the player character models, and then the enemy models.
 
+Here is a link to my [Trello Board] (https://trello.com/b/m53Dn8Vz/rogue-like)
+
 ## Why make this???
 
 I started following gaming culture in my mid-teens and have loved how gaming as become the phenomenon it is today. I joined my alma mater's League of Legends competitive team and it was one of the highlights of my life being able to play on a stage in front hundreds of people. 
