@@ -4,28 +4,34 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    public float moveSpeed = 3f;
-    public float spellDamage = 2f;
-    public float range = 10f;
-    public float resource = 20f;
+    public float moveSpeed = 5f;
+    //public float spellDamage = 2f;
+    //public float range = 10f;
+    //public float resource = 20f;
 
-    float velX;
-    float velY;
-    Rigidbody2D rigBody;
-    public SpriteRenderer spriteRenderer;
-    public Sprite spLeft, spRight, spUp, spDown, spTopLeft, spTopRight, spBotLeft, spBotRight;
+    //float velX;
+    //float velY;
+    public Rigidbody2D rb;
+    //public SpriteRenderer spriteRenderer;
+    //public Sprite spLeft, spRight, spUp, spDown, spTopLeft, spTopRight, spBotLeft, spBotRight;
 
-    void Start(){
-        rigBody = GetComponent<Rigidbody2D>();
+    public Animator animator;
+    Vector2 movement;
 
-    }
 
 
     void Update(){
-        velX = Input.GetAxis("Horizontal");
-        velY = Input.GetAxis("Vertical");
-        //velY = rigBody.velocity.y;
-        rigBody.velocity = new Vector2(velX * moveSpeed, velY * moveSpeed);
+
+        movement.x = Input.GetAxisRaw("Horizontal");
+        movement.y = Input.GetAxisRaw("Vertical");
+        rb.MovePosition(rb.position + movement * moveSpeed * Time.fixedDeltaTime);
+
+        animator.SetFloat("Horizontal", movement.x);
+        animator.SetFloat("Vertical", movement.y);
+        animator.SetFloat("Speed", movement.sqrMagnitude);
+
+
+/*
 
         if(Input.GetKey("w")){
            gameObject.GetComponent<SpriteRenderer>().sprite = spUp;
@@ -45,13 +51,20 @@ public class Player : MonoBehaviour
         }
         
         if(Input.GetKey("w") && Input.GetKey("d")){
-                gameObject.GetComponent<SpriteRenderer>().sprite = spTopRight;
-            }
+            gameObject.GetComponent<SpriteRenderer>().sprite = spTopRight;
+        }
+
         if(Input.GetKey("s") && Input.GetKey("a")){
-                gameObject.GetComponent<SpriteRenderer>().sprite = spBotLeft;
-            }
+            gameObject.GetComponent<SpriteRenderer>().sprite = spBotLeft;
+        }
+
         if(Input.GetKey("s") && Input.GetKey("d")){
-                gameObject.GetComponent<SpriteRenderer>().sprite = spBotRight;
-            }
+            gameObject.GetComponent<SpriteRenderer>().sprite = spBotRight;
+        }
+        */
+    }
+
+    void FixedUpdate() {
+        rb.MovePosition(rb.position + movement * moveSpeed * Time.fixedDeltaTime);
     }
 }

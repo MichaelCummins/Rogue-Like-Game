@@ -96,7 +96,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b021613c03effd3469b0db9d1a8a8944, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Direction: 1
+  Direction: 3
   cameraSpeed: 0.125
 --- !u!61 &1287163206704172070
 BoxCollider2D:
@@ -2000,7 +2000,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b021613c03effd3469b0db9d1a8a8944, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Direction: 1
+  Direction: 2
   cameraSpeed: 0.125
 --- !u!61 &4724465558492073766
 BoxCollider2D:
