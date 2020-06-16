@@ -707,8 +707,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cb3b2f1e27c432047badab5b3a96d0c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentMana: 0
   mana: {fileID: 736308873}
+  totalMana: 100
 --- !u!1 &736308871
 GameObject:
   m_ObjectHideFlags: 0
