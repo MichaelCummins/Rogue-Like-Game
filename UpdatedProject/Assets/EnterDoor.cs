@@ -19,21 +19,13 @@ public class EnterDoor : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D other) {
         if(other.gameObject.tag == "Player"){
             if(Direction == 1){
-                if(Input.GetKeyDown("w")){
-                    GameObject.Find("Main Camera").transform.position = new Vector3(currCameraPosition.x, currCameraPosition.y + 8, currCameraPosition.z);
-                }
+                GameObject.Find("Main Camera").transform.position = new Vector3(currCameraPosition.x, currCameraPosition.y + 8, currCameraPosition.z);
             } else if(Direction == 2){
-                if(Input.GetKeyDown("s")){
-                    GameObject.Find("Main Camera").transform.position = new Vector3(currCameraPosition.x, currCameraPosition.y - 8, currCameraPosition.z);
-                }
+                GameObject.Find("Main Camera").transform.position = new Vector3(currCameraPosition.x, currCameraPosition.y - 8, currCameraPosition.z);
             } else if(Direction == 3){
-                if(Input.GetKeyDown("d")){
-                    GameObject.Find("Main Camera").transform.position = new Vector3(currCameraPosition.x + 14, currCameraPosition.y, currCameraPosition.z);
-                }
+                GameObject.Find("Main Camera").transform.position = new Vector3(currCameraPosition.x + 14, currCameraPosition.y, currCameraPosition.z);
             } else if(Direction == 4){
-                if(Input.GetKeyDown("a")){
-                    GameObject.Find("Main Camera").transform.position = new Vector3(currCameraPosition.x - 14, currCameraPosition.y, currCameraPosition.z);
-                }
+                GameObject.Find("Main Camera").transform.position = new Vector3(currCameraPosition.x - 14, currCameraPosition.y, currCameraPosition.z);
             } else{
                 Debug.Log("This shouldnt be seen, a spawnpoint is missing a direction");
             }
