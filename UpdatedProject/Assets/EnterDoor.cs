@@ -20,7 +20,7 @@ public class EnterDoor : MonoBehaviour
     private void Update() {
         currPlayerPosition = GameObject.Find("Player").transform.position;
     }
-    private void OnTriggerEnter2D(Collider2D other) {
+   /* private void OnTriggerEnter2D(Collider2D other) {
         if(other.gameObject.tag == "Player"){
             if(Direction == 1){
                 GameObject.Find("Main Camera").transform.position = new Vector3(currCameraPosition.x, currCameraPosition.y + 8, currCameraPosition.z);
@@ -42,5 +42,5 @@ public class EnterDoor : MonoBehaviour
                 Debug.Log("This shouldnt be seen, a spawnpoint is missing a direction");
             }
         }
-    }
+    }*/
 }
