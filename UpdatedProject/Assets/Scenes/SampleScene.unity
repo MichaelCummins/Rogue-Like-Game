@@ -379,10 +379,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c00c1c0f3a63b9c43aae7d9e2dad654f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  northCollider: {fileID: 1306848334}
-  southCollider: {fileID: 734271229}
-  westCollider: {fileID: 653490922}
-  eastCollider: {fileID: 1562587914}
 --- !u!20 &519420031
 Camera:
   m_ObjectHideFlags: 0
@@ -527,6 +523,7 @@ GameObject:
   m_Component:
   - component: {fileID: 653490921}
   - component: {fileID: 653490922}
+  - component: {fileID: 653490923}
   m_Layer: 0
   m_Name: WestCollider
   m_TagString: Untagged
@@ -574,6 +571,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.1, y: 2}
   m_EdgeRadius: 0
+--- !u!114 &653490923
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 653490920}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c00c1c0f3a63b9c43aae7d9e2dad654f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &697990559
 GameObject:
   m_ObjectHideFlags: 0
@@ -870,6 +879,7 @@ GameObject:
   m_Component:
   - component: {fileID: 734271228}
   - component: {fileID: 734271229}
+  - component: {fileID: 734271230}
   m_Layer: 0
   m_Name: SouthCollider
   m_TagString: Untagged
@@ -917,6 +927,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2, y: 0.1}
   m_EdgeRadius: 0
+--- !u!114 &734271230
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 734271227}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c00c1c0f3a63b9c43aae7d9e2dad654f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &736308871
 GameObject:
   m_ObjectHideFlags: 0
@@ -1113,6 +1135,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1306848333}
   - component: {fileID: 1306848334}
+  - component: {fileID: 1306848335}
   m_Layer: 0
   m_Name: NorthCollider
   m_TagString: Untagged
@@ -1160,6 +1183,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2, y: 0.1}
   m_EdgeRadius: 0
+--- !u!114 &1306848335
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1306848332}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c00c1c0f3a63b9c43aae7d9e2dad654f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1320874431
 GameObject:
   m_ObjectHideFlags: 0
@@ -1770,6 +1805,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1562587913}
   - component: {fileID: 1562587914}
+  - component: {fileID: 1562587915}
   m_Layer: 0
   m_Name: EastCollder
   m_TagString: Untagged
@@ -1817,6 +1853,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.1, y: 2}
   m_EdgeRadius: 0
+--- !u!114 &1562587915
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1562587912}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c00c1c0f3a63b9c43aae7d9e2dad654f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1624980797
 GameObject:
   m_ObjectHideFlags: 0
@@ -2291,6 +2339,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 147293670277001059, guid: 4edd11edc40a8fe4bb2820238b3cf31a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2380718572103140484, guid: 4edd11edc40a8fe4bb2820238b3cf31a,
         type: 3}
       propertyPath: m_IsActive
@@ -2405,6 +2458,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: TBR
+      objectReference: {fileID: 0}
+    - target: {fileID: 6034206915595276783, guid: 4edd11edc40a8fe4bb2820238b3cf31a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7329455775343790191, guid: 4edd11edc40a8fe4bb2820238b3cf31a,
         type: 3}

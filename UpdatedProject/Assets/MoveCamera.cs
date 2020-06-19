@@ -4,30 +4,33 @@ using UnityEngine;
 
 public class MoveCamera : MonoBehaviour
 {
-    public Collider2D northCollider;
-    public Collider2D southCollider;
-    public Collider2D westCollider;
-    public Collider2D eastCollider;
+
+
+    private string currCollider;
 
     Vector3 currCameraPosition;
 
     private void Start() {
+        currCameraPosition = GameObject.Find("Main Camera").transform.position;
+        currCollider =  transform.name;
+    }
 
+    private void Update() {
         currCameraPosition = GameObject.Find("Main Camera").transform.position;
     }
     
     private void OnTriggerEnter2D(Collider2D other) {
 
-        if(northCollider){
+        if(currCollider == "NorthCollider"){
             GameObject.Find("Main Camera").transform.position = new Vector3(currCameraPosition.x, currCameraPosition.y + 8, currCameraPosition.z);
             currCameraPosition = GameObject.Find("Main Camera").transform.position;
-        }else if(southCollider){
+        }else if(currCollider == "SouthCollider"){
             GameObject.Find("Main Camera").transform.position = new Vector3(currCameraPosition.x, currCameraPosition.y - 8, currCameraPosition.z);
             currCameraPosition = GameObject.Find("Main Camera").transform.position;
-        }else if(westCollider){
+        }else if(currCollider == "WestCollider"){
             GameObject.Find("Main Camera").transform.position = new Vector3(currCameraPosition.x + 14, currCameraPosition.y, currCameraPosition.z);
             currCameraPosition = GameObject.Find("Main Camera").transform.position;
-        }else if(eastCollider){
+        }else if(currCollider == "EastCollider"){
             GameObject.Find("Main Camera").transform.position = new Vector3(currCameraPosition.x - 14, currCameraPosition.y, currCameraPosition.z);
             currCameraPosition = GameObject.Find("Main Camera").transform.position;
         }else{
