@@ -23,19 +23,16 @@ public class MoveCamera : MonoBehaviour
 
         if(currCollider == "NorthCollider"){
             GameObject.Find("Main Camera").transform.position = new Vector3(currCameraPosition.x, currCameraPosition.y + 8, currCameraPosition.z);
-            currCameraPosition = GameObject.Find("Main Camera").transform.position;
         }else if(currCollider == "SouthCollider"){
             GameObject.Find("Main Camera").transform.position = new Vector3(currCameraPosition.x, currCameraPosition.y - 8, currCameraPosition.z);
-            currCameraPosition = GameObject.Find("Main Camera").transform.position;
         }else if(currCollider == "WestCollider"){
             GameObject.Find("Main Camera").transform.position = new Vector3(currCameraPosition.x + 14, currCameraPosition.y, currCameraPosition.z);
-            currCameraPosition = GameObject.Find("Main Camera").transform.position;
-        }else if(currCollider == "EastCollider"){
+        }else if(currCollider == "EastCollder"){
             GameObject.Find("Main Camera").transform.position = new Vector3(currCameraPosition.x - 14, currCameraPosition.y, currCameraPosition.z);
-            currCameraPosition = GameObject.Find("Main Camera").transform.position;
         }else{
             Debug.Log("You shouldnt be seeing this");
         }
+        currCameraPosition = GameObject.Find("Main Camera").transform.position;
         //Debug.Log("Collider " + )
     }
 }
