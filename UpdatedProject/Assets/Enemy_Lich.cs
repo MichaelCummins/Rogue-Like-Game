@@ -11,13 +11,9 @@ public class Enemy_Lich : MonoBehaviour
     public Transform target;
 
     
-    // Start is called before the first frame update
-    void Start()
-    {
-    }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         if(target.position.x - transform.position.x < 4){
             transform.position = Vector2.MoveTowards(transform.position, target.position, speed * Time.deltaTime);
