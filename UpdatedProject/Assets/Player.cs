@@ -17,6 +17,7 @@ public class Player : MonoBehaviour
     public GameObject SpellbookPanel;
     private int counter = 0;
 
+    public ScriptB spellsScript;
 
     void Update(){
 
@@ -30,6 +31,10 @@ public class Player : MonoBehaviour
 
         if(Input.GetKeyDown("space")){
             showhidePanel();
+        }
+
+        if(Input.GetKeyDown("1")){
+            castFireball();
         }
 
         
