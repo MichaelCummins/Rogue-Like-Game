@@ -14,6 +14,9 @@ public class Player : MonoBehaviour
     public Animator animator;
     Vector2 movement;
 
+    public GameObject SpellbookPanel;
+    private int counter = 0;
+
 
     void Update(){
 
@@ -25,10 +28,23 @@ public class Player : MonoBehaviour
         animator.SetFloat("Vertical", movement.y);
         animator.SetFloat("Speed", movement.sqrMagnitude);
 
+        if(Input.GetKeyDown("space")){
+            showhidePanel();
+        }
+
         
     }
 
     void FixedUpdate() {
         rb.MovePosition(rb.position + movement * moveSpeed * Time.fixedDeltaTime);
+    }
+
+    public void showhidePanel(){
+        counter++;
+        if(counter % 2 == 1){
+            SpellbookPanel.gameObject.SetActive(false);
+        }else{
+            SpellbookPanel.gameObject.SetActive(true);
+        }
     }
 }
