@@ -34,7 +34,6 @@ public class Spell : MonoBehaviour
     }
 
     void Fireball(){
-        Instantiate(fireballPreFab, firepoint.position, firepoint.rotation);
-
+       GameObject fireball = Instantiate(fireballPreFab, firepoint.position, firepoint.rotation);
     }
 }
