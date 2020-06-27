@@ -8,6 +8,7 @@ TagManager:
   - SpawnPoint
   - Feeler
   - Enemy
+  - Wall
   layers:
   - Default
   - TransparentFX
