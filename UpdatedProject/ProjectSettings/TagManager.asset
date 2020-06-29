@@ -9,6 +9,7 @@ TagManager:
   - Feeler
   - Enemy
   - Wall
+  - Lich
   layers:
   - Default
   - TransparentFX
