@@ -1412,7 +1412,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 706604043}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: cb3b2f1e27c432047badab5b3a96d0c3, type: 3}
   m_Name: 
@@ -1436,6 +1436,8 @@ MonoBehaviour:
     type: 3}
   cooldownTime: 0.8
   nextFireTime: 0
+  mana: {fileID: 736308873}
+  totalMana: 100
 --- !u!1 &734271227
 GameObject:
   m_ObjectHideFlags: 0
@@ -2258,6 +2260,8 @@ MonoBehaviour:
   fireballPreFab: {fileID: 0}
   cooldownTime: 0.8
   nextFireTime: 0
+  mana: {fileID: 0}
+  totalMana: 0
 --- !u!1 &1419028027
 GameObject:
   m_ObjectHideFlags: 0

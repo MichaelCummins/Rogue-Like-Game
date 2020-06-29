@@ -12,16 +12,20 @@ public class Spell : MonoBehaviour
     public double cooldownTime = .8;
     public double nextFireTime = 0;
 
+    public Image mana;
+    public float totalMana;
+
     Vector3 worldPosition;
 
     // Start is called before the first frame update
-    void Start()
-    {
+    void Start(){
+        mana.fillAmount = 0.5f;
     }
 
     // Update is called once per frame
-    void Update()
-    {
+    void Update(){
+        mana.fillAmount = totalMana / 100;
+        totalMana += 1;
         if(Input.GetMouseButton(0)){
 
             if(Time.time > nextFireTime ){
@@ -34,6 +38,11 @@ public class Spell : MonoBehaviour
     }
 
     void Fireball(){
-       GameObject fireball = Instantiate(fireballPreFab, firepoint.position, firepoint.rotation);
+        if(totalMana > 20){
+            totalMana = totalMana - 20;
+            GameObject fireball = Instantiate(fireballPreFab, firepoint.position, firepoint.rotation);
+        }else{
+            Debug.Log("Not enough Mana");
+        }
     }
 }

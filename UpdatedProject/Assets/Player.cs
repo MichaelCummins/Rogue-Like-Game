@@ -6,9 +6,7 @@ using UnityEngine.UI;
 public class Player : MonoBehaviour
 {
     public float moveSpeed = 5f;
-    //public float spellDamage = 2f;
-    //public float range = 10f;
-    //public float resource = 20f;
+
 
     public Rigidbody2D rb;
 
@@ -18,6 +16,12 @@ public class Player : MonoBehaviour
     public GameObject SpellbookPanel;
     private int counter = 0;
 
+    private Spell spells;
+
+
+    void Start(){
+        
+    }
 
     void Update(){
 
@@ -34,7 +38,7 @@ public class Player : MonoBehaviour
         }
 
         if(Input.GetKeyDown("1")){
-            castFireball();
+           // castFireball();
         }
 
         
@@ -51,9 +55,5 @@ public class Player : MonoBehaviour
         }else{
             SpellbookPanel.gameObject.SetActive(true);
         }
-    }
-
-    private void castFireball(){
-
     }
 }
