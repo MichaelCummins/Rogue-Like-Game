@@ -15,7 +15,6 @@ public class Spell : MonoBehaviour
     public Image mana;
     public float totalMana;
 
-    Vector3 worldPosition;
 
     // Start is called before the first frame update
     void Start(){
@@ -24,8 +23,9 @@ public class Spell : MonoBehaviour
 
     // Update is called once per frame
     void Update(){
+
         mana.fillAmount = totalMana / 100;
-        totalMana += 1;
+        
         if(Input.GetMouseButton(0)){
 
             if(Time.time > nextFireTime ){
@@ -38,8 +38,9 @@ public class Spell : MonoBehaviour
     }
 
     void Fireball(){
+        totalMana--;
         if(totalMana > 20){
-            totalMana = totalMana - 20;
+            totalMana--;
             GameObject fireball = Instantiate(fireballPreFab, firepoint.position, firepoint.rotation);
         }else{
             Debug.Log("Not enough Mana");

@@ -1218,7 +1218,6 @@ GameObject:
   - component: {fileID: 706604048}
   - component: {fileID: 706604049}
   - component: {fileID: 706604050}
-  - component: {fileID: 706604051}
   - component: {fileID: 706604052}
   m_Layer: 8
   m_Name: Player
@@ -1405,20 +1404,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &706604051
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 706604043}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cb3b2f1e27c432047badab5b3a96d0c3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mana: {fileID: 736308873}
-  totalMana: 100
 --- !u!114 &706604052
 MonoBehaviour:
   m_ObjectHideFlags: 0
