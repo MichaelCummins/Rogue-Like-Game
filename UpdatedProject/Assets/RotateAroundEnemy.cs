@@ -11,7 +11,7 @@ public class RotateAroundEnemy : MonoBehaviour
     {
         Vector2 dir = target.position;
 
-        float angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
+        float angle = Mathf.Atan2(dir.y + 1, dir.x) * Mathf.Rad2Deg;
         Quaternion rotation = Quaternion.AngleAxis(angle, Vector3.forward);
         transform.rotation = rotation;       
     }
