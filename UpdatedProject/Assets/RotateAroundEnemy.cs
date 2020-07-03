@@ -9,9 +9,9 @@ public class RotateAroundEnemy : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Vector2 dir = target.position;
+        Vector2 dir = target.position - transform.position;
 
-        float angle = Mathf.Atan2(dir.y + 1, dir.x) * Mathf.Rad2Deg;
+        float angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg - 90f;
         Quaternion rotation = Quaternion.AngleAxis(angle, Vector3.forward);
         transform.rotation = rotation;       
     }
