@@ -24,7 +24,7 @@ public class FireAtPlayer : MonoBehaviour
         */
 
         Vector3 targetDir = targetPlayer.position - transform.position;
-        angle = Mathf.Atan2(targetDir.y, targetDir.x) * Mathf.Rad2Deg - 90f;
+        angle = Mathf.Atan2(targetDir.y, targetDir.x) * Mathf.Rad2Deg; //- 90f;
         Quaternion q = Quaternion.AngleAxis(angle, Vector3.forward);
         transform.rotation = Quaternion.RotateTowards(transform.rotation, q , 90 * Time.deltaTime);
     }
