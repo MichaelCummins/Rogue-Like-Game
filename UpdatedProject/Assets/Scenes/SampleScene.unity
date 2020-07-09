@@ -3436,7 +3436,7 @@ PrefabInstance:
     - target: {fileID: 4670776714810300171, guid: 667237102f76b6d46a53fd42d464bfc8,
         type: 3}
       propertyPath: speed
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4670776714810300172, guid: 667237102f76b6d46a53fd42d464bfc8,
         type: 3}
@@ -3506,7 +3506,7 @@ PrefabInstance:
     - target: {fileID: 4670776714810300182, guid: 667237102f76b6d46a53fd42d464bfc8,
         type: 3}
       propertyPath: m_Constraints
-      value: 0
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 6341154706908978631, guid: 667237102f76b6d46a53fd42d464bfc8,
         type: 3}
