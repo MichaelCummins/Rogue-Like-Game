@@ -15,9 +15,10 @@ public class Enemy_Lich : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        if(target.position.x - transform.position.x < 4){
+       /* if(target.position.x - transform.position.x < 4){
             transform.position = Vector2.MoveTowards(transform.position, target.position, speed * Time.deltaTime);
-        }
+        }*/
+        transform.position = Vector2.MoveTowards(transform.position, target.position, speed * Time.deltaTime);
     }
 
     private void OnCollisionEnter2D(Collision2D other) {
