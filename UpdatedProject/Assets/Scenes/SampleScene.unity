@@ -3443,6 +3443,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemyLich
       objectReference: {fileID: 0}
+    - target: {fileID: 4670776714810300172, guid: 667237102f76b6d46a53fd42d464bfc8,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4670776714810300180, guid: 667237102f76b6d46a53fd42d464bfc8,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3576,3 +3581,22 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 4670776714299360391}
   m_PrefabAsset: {fileID: 0}
+--- !u!95 &4670776714299360396
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4670776714299360393}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 174d8c442728cad438ad1d605d11e7ba, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
