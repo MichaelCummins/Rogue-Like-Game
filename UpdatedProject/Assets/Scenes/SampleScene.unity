@@ -3438,6 +3438,11 @@ PrefabInstance:
       propertyPath: speed
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4670776714810300171, guid: 667237102f76b6d46a53fd42d464bfc8,
+        type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 4670776714299360396}
     - target: {fileID: 4670776714810300172, guid: 667237102f76b6d46a53fd42d464bfc8,
         type: 3}
       propertyPath: m_Name
@@ -3446,7 +3451,7 @@ PrefabInstance:
     - target: {fileID: 4670776714810300172, guid: 667237102f76b6d46a53fd42d464bfc8,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4670776714810300180, guid: 667237102f76b6d46a53fd42d464bfc8,
         type: 3}
