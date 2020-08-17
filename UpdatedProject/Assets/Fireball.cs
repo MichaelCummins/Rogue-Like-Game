@@ -21,7 +21,7 @@ public class Fireball : MonoBehaviour
     }
 
     public void OnCollisionEnter2D(Collision2D collision){
-        if (collision.gameObject.tag.Equals("Wall") || collision.gameObject.tag.Equals("Enemy")){
+        if (collision.gameObject.tag.Equals("Wall") || collision.gameObject.tag.Equals("Lich")){
             Destroy(gameObject);
         }
     }

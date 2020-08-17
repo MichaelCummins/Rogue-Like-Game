@@ -18,15 +18,13 @@ public class Enemy_Lich : MonoBehaviour
     float distance;
     Vector2 direction;
 
+    void Start(){
+        target = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
+    }
     
-
     // Update is called once per frame
     void FixedUpdate()
     {
-       /* if(target.position.x - transform.position.x < 4){
-            transform.position = Vector2.MoveTowards(transform.position, target.position, speed * Time.deltaTime);
-        }*/
-
         heading = target.position - transform.position;
         distance = heading.magnitude;
         direction = heading / distance;
@@ -53,13 +51,17 @@ public class Enemy_Lich : MonoBehaviour
         animator.SetFloat("Speed", movement.sqrMagnitude);
         animator.SetBool("PlayerMoving", LichMoving);
     
-    
+
+        if(health == 0 ){
+            Destroy(gameObject);
+        }
     
     }
 
     private void OnCollisionEnter2D(Collision2D other) {
-        if(health == 0 ){
-            Destroy(gameObject);
+        if(other.gameObject.tag.Equals("Fireball")){
+            health--;
+            //Destroy(other);
         }
     }
 }

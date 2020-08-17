@@ -10,6 +10,7 @@ TagManager:
   - Enemy
   - Wall
   - Lich
+  - Fireball
   layers:
   - Default
   - TransparentFX
